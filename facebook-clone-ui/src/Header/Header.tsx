@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
+import { LogIn } from "../LogInPage/LogIn";
 
 const useStyles = makeStyles(() =>({
   header:{
@@ -20,6 +21,9 @@ export function Header() {
     return (
       <div className={classes.header}>
         <div className={classes.text}>Facebook</div>
+        <div>
+          <LogIn/>
+        </div>
       </div>
     );
 }
