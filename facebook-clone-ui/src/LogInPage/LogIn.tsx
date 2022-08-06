@@ -1,5 +1,7 @@
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { useDispatch } from "react-redux";
+import { User } from "../User";
 
 const useStyles = makeStyles(() =>({
   container: {
@@ -52,6 +54,15 @@ const useStyles = makeStyles(() =>({
 export function LogIn() {
   const classes = useStyles();
   
+  //const dispatch = useDispatch();
+  
+  // function onClick(){
+  //   dispatch(makeFetchUser)
+  // }
+
+  // function makeFetchUser(api: API): User {
+  // }
+
     return (
       <div className={classes.container}>
         <div className={classes.title}>
