@@ -5,10 +5,7 @@ const useStyles = makeStyles(() =>({
      backgroundColor: "black",
      height: "100px"
   },
-  text: {
-    fontSize: "50px",
-    color: "#FF1493",
-    fontFamily: 'Monaco',
+  logo: {
     paddingTop: "30px",
     paddingLeft: "40px",
     fontWeight: "bold"
@@ -19,7 +16,7 @@ export function Header() {
   const classes = useStyles();
     return (
       <div className={classes.header}>
-        <div className={classes.text}>FreakBook</div>
+        <img src={"./src/logo.png"} className={classes.logo} />
       </div>
     );
 }
