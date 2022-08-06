@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core/styles";
-import { LogIn } from "../LogInPage/LogIn";
 
 const useStyles = makeStyles(() =>({
   header:{
@@ -9,7 +8,7 @@ const useStyles = makeStyles(() =>({
   text: {
     fontSize: "50px",
     color: "#FF1493",
-    fontFamily: 'serif',
+    fontFamily: 'Monaco',
     paddingTop: "30px",
     paddingLeft: "40px",
     fontWeight: "bold"
@@ -20,10 +19,7 @@ export function Header() {
   const classes = useStyles();
     return (
       <div className={classes.header}>
-        <div className={classes.text}>Facebook</div>
-        <div>
-          <LogIn/>
-        </div>
+        <div className={classes.text}>FreakBook</div>
       </div>
     );
 }
